@@ -7,7 +7,7 @@
   }
 
   input[type="time"] {
-    color: var(--color-gray-600);
+    color: var(--color-gray-500);
     display: flex;
     gap: 5px;
     justify-content: space-between;
