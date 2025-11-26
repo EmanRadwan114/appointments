@@ -16,7 +16,7 @@ const AppointmentsHeader: React.FC = () => {
   };
   return (
     <div className="flex flex-col md:flex-row gap-3 justify-between mb-8">
-      <p className="font-medium text-gray-800 text-xl md:text-2xl flex-1">
+      <p className="font-medium text-gray-700 text-lg md:text-2xl flex-1">
         {leftAppointments.length !== 0 ? (
           <>
             You have{" "}

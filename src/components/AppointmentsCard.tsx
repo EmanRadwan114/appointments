@@ -49,7 +49,7 @@ const AppointmentsCard: React.FC<IProps> = ({ appointment }) => {
           <h3
             className={`${
               appointment.isCompleted && "line-through"
-            } capitalize text-lg md:text-xl font-semibold text-gray-800`}
+            } capitalize text-lg md:text-xl font-semibold text-gray-700`}
           >
             {appointment.details}
           </h3>
