@@ -8,5 +8,12 @@
 
   input[type="time"] {
     color: var(--color-gray-600);
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  input[type="time"]::before {
+    content: "Time (e.g., 10:30)";
   }
 }

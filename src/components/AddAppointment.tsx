@@ -42,29 +42,25 @@ const AddAppointment: React.FC = () => {
   };
 
   return (
-    <div className="fixed top-10 start-5 end-5 lg:w-5/6 xl:w-4/6 lg:mx-auto">
-      <div className="flex flex-col sm:flex-row gap-3 justify-center items-center w-full bg-white p-5 shadow-lg rounded-md">
+    <div className="fixed top-10 start-5 end-5 lg:w-5/6 lg:mx-auto">
+      <div className="flex flex-col lg:flex-row gap-3 justify-center items-center w-full bg-white p-5 shadow-lg rounded-md">
         <Input
           type="text"
-          additionalClasses="w-full sm:w-[50%] text-gray-800"
+          additionalClasses="w-full lg:w-[50%] text-gray-800"
           placeholder="Appointment Details"
           value={newAppointment.details}
           name="details"
           onChange={handleChange}
         />
         <Input
-          type="text"
-          additionalClasses="w-full sm:w-[30%]"
-          placeholder="Time (e.g., 10:30)"
+          type="time"
+          additionalClasses="w-full lg:w-[30%]"
           value={newAppointment.time}
           name="time"
           onChange={handleChange}
-          onFocus={(e) => {
-            e.target.type = "time";
-          }}
         />
         <Button
-          additionalClasses="w-full sm:w-[20%]"
+          additionalClasses="w-full lg:w-[20%]"
           onClick={addAppointment}
           disabled={newAppointment.details === "" || newAppointment.time === ""}
         >

@@ -22,7 +22,7 @@ function App() {
     <main>
       <div className="container mx-auto py-10 px-5">
         <AddAppointment></AddAppointment>
-        <div className="mt-56 sm:mt-32">
+        <div className="mt-52 lg:mt-32">
           <AppointmentsList />
         </div>
       </div>
