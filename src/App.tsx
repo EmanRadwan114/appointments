@@ -12,7 +12,7 @@ function App() {
     if (localStorage.getItem("appointments") !== null) {
       setAppointments([...JSON.parse(localStorage.getItem("appointments")!)]);
     }
-  }, []);
+  }, [setAppointments]);
 
   useEffect(() => {
     localStorage.setItem("appointments", JSON.stringify(appointments));

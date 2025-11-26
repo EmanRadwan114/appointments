@@ -53,11 +53,15 @@ const AddAppointment: React.FC = () => {
           onChange={handleChange}
         />
         <Input
-          type="time"
+          type="text"
           additionalClasses="w-full sm:w-[30%]"
+          placeholder="Time (e.g., 10:30)"
           value={newAppointment.time}
           name="time"
           onChange={handleChange}
+          onFocus={(e) => {
+            e.target.type = "time";
+          }}
         />
         <Button
           additionalClasses="w-full sm:w-[20%]"
