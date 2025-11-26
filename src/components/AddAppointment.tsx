@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
 import { AppointmentsContext } from "../contexts/AppointmentsContext";
