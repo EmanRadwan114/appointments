@@ -10,3 +10,12 @@ Built with **React**, **TypeScript**, **Context API**, and **Tailwind CSS**.
 - ✔ Mark appointment as completed
 - 🧩 State management using React Context API
 - 🎨 Responsive UI with Tailwind CSS
+
+## ⚡ Built With Vite
+
+This project uses **Vite** for fast development and optimized production builds.
+
+## 📦 Getting Started
+
+npm install  
+npm run dev
